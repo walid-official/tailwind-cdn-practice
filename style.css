@@ -23,7 +23,8 @@ body{
     animation: slideRight 1s ease forwards;
 }
 .btn-content {
-    animation: slideDown 1s ease forwards;
+    animation: slideDown 3s ease-in-out forwards;
+    animation-iteration-count: infinite;
 }
 .heading-text{
     animation: slideRight 1s ease forwards; 
@@ -33,8 +34,6 @@ ul li .home-item{
     animation-delay: calc(.1s * var(--i));
     display: block;
 }
-
-
 
 @keyframes slideRight {
     0%{
@@ -49,7 +48,10 @@ ul li .home-item{
 
 @keyframes slideDown {
     0%{
-        transform: translateY(100%)
+        transform: translateY(0%)
+    }
+    50%{
+        transform: translateY(-24%)
     }
     100%{
         transform: translateY(0%);
