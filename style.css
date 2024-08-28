@@ -19,3 +19,48 @@ body{
     flex-wrap: nowrap;
     margin: 0 10px;
 }
+.n-logo{
+    animation: slideRight 1s ease forwards;
+}
+.btn-content {
+    animation: slideDown 1s ease forwards;
+}
+.heading-text{
+    animation: slideRight 1s ease forwards; 
+}
+ul li .home-item{
+    animation: slideTop 1s all forwards;
+    animation-delay: calc(.1s * var(--i));
+    display: block;
+}
+
+
+
+@keyframes slideRight {
+    0%{
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    0%{
+        transform: translateY(100%)
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+
+@keyframes slideTop {
+    0%{
+        transform: translateY(200%)
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
